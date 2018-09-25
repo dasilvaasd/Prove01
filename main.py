@@ -7,7 +7,7 @@ def main():
     iris = datasets.load_iris()
 
     x_train, x_test, y_train, y_test = train_test_split(
-        iris.data, iris.target, test_size=0.8, random_state=15
+        iris.data, iris.target, test_size=0.3, random_state=15
     )
 
     classifier = GaussianNB()
